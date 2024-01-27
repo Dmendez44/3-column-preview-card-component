@@ -34,7 +34,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 
 - Solution URL: https://github.com/Dmendez44/3-column-preview-card-component
-- Live Site URL: https://github.com/Dmendez44/3-column-preview-card-component/
+- Live Site URL: https://dmendez44.github.io/3-column-preview-card-component/
 
 
 ## My process
