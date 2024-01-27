@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+html,
+body {
+    height: fit-content;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    color: white;
+}
+
+.sedan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    background-color: hsl(31, 77%, 52%);
+    gap: 23px;
+    flex: 1;
+    box-sizing: border-box;
+    padding: 40px;
+    padding-top: 60px;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+}
+
+.suvs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    background-color: hsl(184, 100%, 22%);
+    gap: 20px;
+    flex: 1;
+    padding: 40px;
+    padding-top: 60px;
+}
+
+.luxury {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    background-color: hsl(179, 100%, 13%);
+    gap: 20px;
+    flex: 1;
+    padding: 40px;
+    padding-top: 60px;
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+
+}
+
+p {
+    font-size: 17px;
+    font-weight: 400;
+        line-height: 1.5em;
+}
+
+section {
+    padding: 40px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+button {
+    border-radius: 1.5em;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.sedan button {
+    color: hsl(31, 77%, 52%);
+    border-color: hsl(31, 77%, 52%);
+    border-style: none;
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+    border-color: hsl(184, 100%, 22%);
+    border-style: none;
+}
+
+.luxury button {
+    color:hsl(179, 100%, 13%);
+    border-color: hsl(179, 100%, 13%);
+    border-style: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .card {
+            display: flex;
+            flex-direction: row;
+            /* min-width: 800px;
+            height: 550px; */
+            min-width: 80%;
+            height: 550px;
+        }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sedan, .suvs, .luxury {
+        height: 550px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    .car {
+        justify-content: space-around;
+    }
+
+    .luxury {
+        border-top-right-radius: 1.5em;
+        border-bottom-right-radius: 1.5em;
+        border-bottom-left-radius: 0;
+    }
+    .sedan {
+        border-bottom-left-radius: 1.5em;
+        border-top-left-radius: 1.5em;
+        border-top-right-radius: 0;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    p {
+        font-size: 1.2rem;
+        font-weight: lighter;
+    }
+
+    button {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+}
